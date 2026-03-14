@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NeuroSense</title>
+<style>
+body{
+font-family: Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:50px;
+}
+h1{
+font-size:40px;
+}
+button{
+padding:15px 30px;
+font-size:18px;
+background:#22c55e;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🧠 NeuroSense</h1>
+<h2>AI Emotion Detection App</h2>
+
+<p>This prototype detects human emotions using AI.</p>
+
+<button onclick="scan()">Start Emotion Scan</button>
+
+<p id="result"></p>
+
+<script>
+function scan(){
+const emotions=["Happy 😊","Sad 😢","Surprised 😲","Angry 😡","Neutral 😐"];
+const random=emotions[Math.floor(Math.random()*emotions.length)];
+document.getElementById("result").innerHTML="Detected Emotion: "+random;
+}
+</script>
+
+</body>
+</html>
